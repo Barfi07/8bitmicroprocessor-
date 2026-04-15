@@ -146,7 +146,7 @@ dest ─────►│    • Register read/write addresses               �
 | `1001` | EQ       | `1001`   | 0         | **0**      | 1           |
 | `default` | NOP   | `0000`   | 0         | 0          | **0**       |
 
-> ℹ️ `use_imm = 1` forces the ALU's B operand to the constant `8'd1`. This is used for NOT, SHL, and SHR where operand B is irrelevant.
+>  `use_imm = 1` forces the ALU's B operand to the constant `8'd1`. This is used for NOT, SHL, and SHR where operand B is irrelevant.
 
 ---
 
@@ -191,7 +191,7 @@ This ensures that for unary operations (NOT, SHL, SHR) the ALU receives a valid 
 
 ---
 
-## 🔄 Datapath Diagram
+##  Datapath Diagram
 
 ```
   ┌─────────────────────────────────────────────────────────────────────────┐
@@ -240,7 +240,7 @@ This ensures that for unary operations (NOT, SHL, SHR) the ALU receives a valid 
 
 ---
 
-## ⚙️ ALU Operation Flow
+##  ALU Operation Flow
 
 ```
                    ┌─────────────────────┐
@@ -278,7 +278,7 @@ This ensures that for unary operations (NOT, SHL, SHR) the ALU receives a valid 
 
 ---
 
-## 📜 Instruction Set Architecture (ISA)
+##  Instruction Set Architecture (ISA)
 
 Each instruction word is implicitly formed from the top-level inputs:
 
@@ -304,7 +304,7 @@ Each instruction word is implicitly formed from the top-level inputs:
 
 ---
 
-## 🚩 Flag Register
+##  Flag Register
 
 ```
          ┌─────┬─────┬─────┬─────┐
@@ -318,7 +318,7 @@ Each instruction word is implicitly formed from the top-level inputs:
 
 ---
 
-## ⏱️ Simulation Waveform Flow
+##  Simulation Waveform Flow
 
 ```
  Time(ns)  0    10   20   30   40   50   60   70   80   90  100  110  120 ...
@@ -340,7 +340,7 @@ Each instruction word is implicitly formed from the top-level inputs:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 8bitmicroprocessor-/
@@ -355,7 +355,7 @@ Each instruction word is implicitly formed from the top-level inputs:
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -384,7 +384,7 @@ gtkwave dump.vcd
 
 ---
 
-## 🧪 Testbench
+##  Testbench
 
 **File:** `top_tb.v`
 
@@ -412,7 +412,7 @@ R[0] = 10,  R[1] = 5,  R[2] = 6,  R[3] = 4
 
 ---
 
-## 📊 Example Simulation Output
+##  Example Simulation Output
 
 ```
 T=70ns   OPCODE=0000  A=5  B=6  RESULT=16  | Z=0 C=0 N=0 V=0
@@ -429,7 +429,7 @@ T=250ns  OPCODE=1001  A=5  B=6  RESULT=0   | Z=1 C=0 N=0 V=0
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - [ ] Add a **Program Counter (PC)** and instruction memory (ROM) for sequential execution
 - [ ] Implement a proper **fetch → decode → execute** pipeline
@@ -441,14 +441,14 @@ T=250ns  OPCODE=1001  A=5  B=6  RESULT=0   | Z=1 C=0 N=0 V=0
 
 ---
 
-## 👤 Author
+##  Author
 
 **Barfi07**
 GitHub: [@Barfi07](https://github.com/Barfi07)
 
 ---
 
-## 📄 License
+##  License
 
 This project is open-source and available under the [MIT License](LICENSE).
 
