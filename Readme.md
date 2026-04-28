@@ -77,7 +77,7 @@ A fully functional **8-bit microprocessor** designed and implemented in Verilog 
 
 ---
 
-## 📦 Module Breakdown
+##  Module Breakdown
 
 ### ALU — Arithmetic Logic Unit
 
