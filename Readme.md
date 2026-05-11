@@ -291,16 +291,16 @@ Each instruction word is implicitly formed from the top-level inputs:
 
 | Mnemonic | Opcode | Operation               | Uses B? | Flags Updated |
 |----------|--------|-------------------------|---------|---------------|
-| `ADD`    | `0000` | `RD = RS1 + RS2`        | ✅      | Z, C, N, V   |
-| `SUB`    | `0001` | `RD = RS1 - RS2`        | ✅      | Z, C, N, V   |
-| `AND`    | `0010` | `RD = RS1 & RS2`        | ✅      | Z, N          |
-| `OR`     | `0011` | `RD = RS1 \| RS2`       | ✅      | Z, N          |
-| `XOR`    | `0100` | `RD = RS1 ^ RS2`        | ✅      | Z, N          |
-| `NOT`    | `0101` | `RD = ~RS1`             | ❌ (imm)| Z, C, N, V   |
-| `SHL`    | `0110` | `RD = RS1 << 1`         | ❌ (imm)| Z, C, N, V   |
-| `SHR`    | `0111` | `RD = RS1 >> 1`         | ❌ (imm)| Z, C, N, V   |
-| `GT`     | `1000` | `RD = (RS1 > RS2)?1:0`  | ✅      | Z, N          |
-| `EQ`     | `1001` | `RD = (RS1==RS2)?1:0`   | ✅      | Z, N          |
+| `ADD`    | `0000` | `RD = RS1 + RS2`        | yes     | Z, C, N, V   |
+| `SUB`    | `0001` | `RD = RS1 - RS2`        | yes     | Z, C, N, V   |
+| `AND`    | `0010` | `RD = RS1 & RS2`        | yes     | Z, N          |
+| `OR`     | `0011` | `RD = RS1 \| RS2`       | yes     | Z, N          |
+| `XOR`    | `0100` | `RD = RS1 ^ RS2`        | yes     | Z, N          |
+| `NOT`    | `0101` | `RD = ~RS1`             | no (imm)| Z, C, N, V   |
+| `SHL`    | `0110` | `RD = RS1 << 1`         | no (imm)| Z, C, N, V   |
+| `SHR`    | `0111` | `RD = RS1 >> 1`         | no (imm)| Z, C, N, V   |
+| `GT`     | `1000` | `RD = (RS1 > RS2)?1:0`  | yes     | Z, N          |
+| `EQ`     | `1001` | `RD = (RS1==RS2)?1:0`   | yes     | Z, N          |
 
 ---
 
